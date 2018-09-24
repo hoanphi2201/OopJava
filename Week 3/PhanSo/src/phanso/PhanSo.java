@@ -1,12 +1,6 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package phanso;
 
 /**
- *
  * @author phixuanhoan
  */
 public class PhanSo {
@@ -56,7 +50,7 @@ public class PhanSo {
     }
     // So sánh 2 phân số
     public boolean equals(PhanSo ps){
-        double ps1 =(double)this.tuso/this.mauso;
+        double ps1 = (double)this.tuso/this.mauso;
         double ps2 = (double)ps.tuso/ps.mauso;
         return ps1 == ps2;
     }
@@ -100,7 +94,7 @@ public class PhanSo {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        PhanSo ps1 = new PhanSo(1, 2);
+        PhanSo ps1 = new PhanSo(2, 4);
         PhanSo ps2 = new PhanSo(1, 2);
         
         PhanSo psTong =  ps1.tongPhanSo(ps2);
