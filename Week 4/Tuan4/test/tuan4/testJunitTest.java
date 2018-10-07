@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package tuan4;
 
 import org.junit.After;
@@ -43,7 +38,7 @@ public class testJunitTest {
     @Test
     public void testMax() {
         System.out.println("Max");
-        int a = 1;
+        int a = 3;
         int b = 3;
         int expResult = 3;
         int result = testJunit.Max(a, b);
@@ -109,6 +104,46 @@ public class testJunitTest {
         // TODO review the generated test code and remove the default call to fail.
         //fail("The test case is a prototype.");
     }
+    @Test
+    public void testMinArr2() {
+        System.out.println("MinArr");
+        int[] arr = {7,5,8,4};
+        int expResult = 4;
+        int result = testJunit.MinArr(arr);
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        //fail("The test case is a prototype.");
+    }
+    @Test
+    public void testMinArr3() {
+        System.out.println("MinArr");
+        int[] arr = {12,54,65,87};
+        int expResult = 12;
+        int result = testJunit.MinArr(arr);
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        //fail("The test case is a prototype.");
+    }
+    @Test
+    public void testMinArr4() {
+        System.out.println("MinArr");
+        int[] arr = {1,4,6,3,0};
+        int expResult = 0;
+        int result = testJunit.MinArr(arr);
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        //fail("The test case is a prototype.");
+    }
+    @Test
+    public void testMinArr5() {
+        System.out.println("MinArr");
+        int[] arr = {-7,-6,-7,10};
+        int expResult = -7;
+        int result = testJunit.MinArr(arr);
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        //fail("The test case is a prototype.");
+    }
 
     /**
      * Test of BMI method, of class testJunit.
@@ -116,11 +151,62 @@ public class testJunitTest {
     @Test
     public void testBMI() {
         System.out.println("BMI");
-        double weight = 45.0;
-        double height = 165.0;
-        testJunit.BMI(weight, height);
+        double weight = 60.0;
+        double height = 1.70;
+        String expResult = "Bình thường";
+        String result = testJunit.BMI(weight, height);
+        assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
         //fail("The test case is a prototype.");
     }
+    @Test
+    public void testBMI1() {
+        System.out.println("BMI");
+        double weight = 70.0;
+        double height = 1.70;
+        String expResult = "Thừa cân";
+        String result = testJunit.BMI(weight, height);
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        //fail("The test case is a prototype.");
+    }
+    @Test
+    public void testBMI2() {
+        System.out.println("BMI");
+        double weight = 80.0;
+        double height = 1.70;
+        String expResult = "Béo phì";
+        String result = testJunit.BMI(weight, height);
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        //fail("The test case is a prototype.");
+    }
+    @Test
+    public void testBMI3() {
+        System.out.println("BMI");
+        double weight = 80.0;
+        double height = 1.6;
+        String expResult = "Béo phì";
+        String result = testJunit.BMI(weight, height);
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        //fail("The test case is a prototype.");
+    }
+    @Test
+    public void testBMI4() {
+        System.out.println("BMI");
+        double weight = 60.0;
+        double height = 1.8;
+        String expResult = "Bình thường";
+        String result = testJunit.BMI(weight, height);
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        //fail("The test case is a prototype.");
+    }
+
+    /**
+     * Test of BMI method, of class testJunit.
+     */
+    
     
 }

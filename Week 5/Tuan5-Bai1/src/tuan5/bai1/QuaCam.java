@@ -10,5 +10,36 @@ package tuan5.bai1;
  * @author phixuanhoan
  */
 public class QuaCam extends HoaQua{
+    private int soMui;          //số múi
+    private String loaiVo;      // loại vỏ sần hay nhẵn
+    /**
+     * @return the soMui
+     */
+    public int getSoMui() {
+        return soMui;
+    }
+
+    /**
+     * @param soMui the soMui to set
+     */
+    public void setSoMui(int soMui) {
+        this.soMui = soMui;
+    }
+
+    /**
+     * @return the loaiVo
+     */
+    public String getLoaiVo() {
+        return loaiVo;
+    }
+
+    /**
+     * @param loaiVo the loaiVo to set
+     */
+    public void setLoaiVo(String loaiVo) {
+        this.loaiVo = loaiVo;
+    }
+
+    
     
 }

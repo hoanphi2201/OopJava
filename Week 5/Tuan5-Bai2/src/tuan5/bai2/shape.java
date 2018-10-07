@@ -27,7 +27,9 @@ package tuan5.bai2;
  * 
  */
 public class shape {
+    // color: maù của hình
     protected String color;
+    // filled : kiểm tra đã đầy hay chưa
     protected boolean filled;
 
     /**

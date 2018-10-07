@@ -10,79 +10,128 @@ package tuan5.bai1;
  * @author phixuanhoan
  */
 public class HoaQua {
-    private String GiaBan;
-    private String NguonGoc;
-    private String NgayNhap;
-    private String SoLuong;
-    private String Gia;
+    
+    
+    private String nguonGoc;
+    private Double giaBanLe;
+    private Double giaBanBuon;
+    private int soLuong;
+    private Double giaNhap;
+    private String ngayNhap;
+    private String ngayXuat;
+    private String mauSac;
 
     /**
-     * @return the GiaBan
-     */
-    public String getGiaBan() {
-        return GiaBan;
-    }
-
-    /**
-     * @param GiaBan the GiaBan to set
-     */
-    public void setGiaBan(String GiaBan) {
-        this.GiaBan = GiaBan;
-    }
-
-    /**
-     * @return the NguonGoc
+     * @return the nguonGoc
      */
     public String getNguonGoc() {
-        return NguonGoc;
+        return nguonGoc;
     }
 
     /**
-     * @param NguonGoc the NguonGoc to set
+     * @param nguonGoc the nguonGoc to set
      */
-    public void setNguonGoc(String NguonGoc) {
-        this.NguonGoc = NguonGoc;
+    public void setNguonGoc(String nguonGoc) {
+        this.nguonGoc = nguonGoc;
     }
 
     /**
-     * @return the NgayNhap
+     * @return the giaBanLe
+     */
+    public Double getGiaBanLe() {
+        return giaBanLe;
+    }
+
+    /**
+     * @param giaBanLe the giaBanLe to set
+     */
+    public void setGiaBanLe(Double giaBanLe) {
+        this.giaBanLe = giaBanLe;
+    }
+
+    /**
+     * @return the giaBanBuon
+     */
+    public Double getGiaBanBuon() {
+        return giaBanBuon;
+    }
+
+    /**
+     * @param giaBanBuon the giaBanBuon to set
+     */
+    public void setGiaBanBuon(Double giaBanBuon) {
+        this.giaBanBuon = giaBanBuon;
+    }
+
+    /**
+     * @return the soLuong
+     */
+    public int getSoLuong() {
+        return soLuong;
+    }
+
+    /**
+     * @param soLuong the soLuong to set
+     */
+    public void setSoLuong(int soLuong) {
+        this.soLuong = soLuong;
+    }
+
+    /**
+     * @return the giaNhap
+     */
+    public Double getGiaNhap() {
+        return giaNhap;
+    }
+
+    /**
+     * @param giaNhap the giaNhap to set
+     */
+    public void setGiaNhap(Double giaNhap) {
+        this.giaNhap = giaNhap;
+    }
+
+    /**
+     * @return the ngayNhap
      */
     public String getNgayNhap() {
-        return NgayNhap;
+        return ngayNhap;
     }
 
     /**
-     * @param NgayNhap the NgayNhap to set
+     * @param ngayNhap the ngayNhap to set
      */
-    public void setNgayNhap(String NgayNhap) {
-        this.NgayNhap = NgayNhap;
+    public void setNgayNhap(String ngayNhap) {
+        this.ngayNhap = ngayNhap;
     }
 
     /**
-     * @return the SoLuong
+     * @return the ngayXuat
      */
-    public String getSoLuong() {
-        return SoLuong;
+    public String getNgayXuat() {
+        return ngayXuat;
     }
 
     /**
-     * @param SoLuong the SoLuong to set
+     * @param ngayXuat the ngayXuat to set
      */
-    public void setSoLuong(String SoLuong) {
-        this.SoLuong = SoLuong;
+    public void setNgayXuat(String ngayXuat) {
+        this.ngayXuat = ngayXuat;
     }
 
     /**
-     * @return the Gia
+     * @return the mauSac
      */
-    public String getGia() {
-        return Gia;
+    public String getMauSac() {
+        return mauSac;
     }
 
     /**
-     * @param Gia the Gia to set
+     * @param mauSac the mauSac to set
      */
-    public void setGia(String Gia) {
-        this.Gia = Gia;
+    public void setMauSac(String mauSac) {
+        this.mauSac = mauSac;
     }
+    
+   
 }

@@ -40,14 +40,17 @@ public class rectangle extends shape{
     public void setLength(double length) {
         this.length = length;
     }
+    //Constructor
      public rectangle(){
         width = 1.0;
         length = 1.0;
     }
+     //Constructor
      public rectangle(double width, double length){
         this.width = width;
         this.length = length;
     }
+     //Constructor
      public rectangle(double width, double length, String color, boolean filled){
         this.width = width;
         this.length = length;
@@ -55,12 +58,15 @@ public class rectangle extends shape{
         this.filled = filled;
         
     }
+     // diện tích hình 
      public double getArea(){
          return width*length;
      }
+     // Chu vi hình
      public double getPerimeter(){
          return 2*(width + length);
      }
+     // toString
      public String toString(){
          return "rectanle";
      }
