@@ -10,19 +10,17 @@ package tuan5.bai2;
  * @author phixuanhoan
  */
 public class square extends rectangle{
-    // side: cạnh của hình vuông
-    private double side;    
     //Constructor
     public square(){
-        side = 1.0;
+        this.width = this.length = 0;
     }
     //Constructor
     public square(double side){
-        this.side =side;
+        this.width = this.length = side;
     }
     //Constructor
     public square(double side, String color, boolean filled){
-        this.side =side;
+        this.width = this.length = side;
         this.color = color;
         this.filled = filled;
     }
@@ -31,28 +29,24 @@ public class square extends rectangle{
      * @return the side
      */
     public double getSide() {
-        return side;
+        return this.width;
     }
 
     /**
      * @param side the side to set
      */
     public void setSide(double side) {
-        this.side = side;
+        this.width = this.length = side;
     }
     
 
-    /**
-     * @param width the width to set
-     */
+    @Override
     public void setWidth(double side) {
-        this.side = side;
+        this.width = side;
     }
-    /**
-     * @param Length the length to set
-     */
+    @Override
     public void setLength(double side) {
-        this.side = side;
+        this.length = side;
     }
     // toString 
     public String toString(){

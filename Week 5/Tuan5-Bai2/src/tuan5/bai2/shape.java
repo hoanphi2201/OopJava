@@ -26,7 +26,7 @@ package tuan5.bai2;
  * => Pi phải chứ final
  * 
  */
-public class shape {
+public abstract class shape {
     // color: maù của hình
     protected String color;
     // filled : kiểm tra đã đầy hay chưa
