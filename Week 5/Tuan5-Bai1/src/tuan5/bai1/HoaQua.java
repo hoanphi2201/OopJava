@@ -11,15 +11,14 @@ package tuan5.bai1;
  */
 public class HoaQua {
     
-    
-    private String nguonGoc;
-    private Double giaBanLe;
-    private Double giaBanBuon;
-    private int soLuong;
-    private Double giaNhap;
-    private String ngayNhap;
-    private String ngayXuat;
-    private String mauSac;
+    protected String nguonGoc;
+    protected Double giaBanLe;
+    protected Double giaBanBuon;
+    protected int soLuong;
+    protected Double giaNhap;
+    protected String ngayNhap;
+    protected String ngayXuat;
+    protected String mauSac;
 
     /**
      * @return the nguonGoc

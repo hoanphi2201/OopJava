@@ -10,8 +10,8 @@ package tuan5.bai1;
  * @author phixuanhoan
  */
 public class QuaCam extends HoaQua{
-    private int soMui;          //số múi
-    private String loaiVo;      // loại vỏ sần hay nhẵn
+    protected int soMui;          //số múi
+    protected String loaiVo;      // loại vỏ sần hay nhẵn
     /**
      * @return the soMui
      */
