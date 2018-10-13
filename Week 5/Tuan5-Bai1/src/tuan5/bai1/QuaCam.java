@@ -39,7 +39,10 @@ public class QuaCam extends HoaQua{
     public void setLoaiVo(String loaiVo) {
         this.loaiVo = loaiVo;
     }
-
+    
+     public String toString(){
+        return "qua cam";
+    }
     
     
 }

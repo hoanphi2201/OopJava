@@ -10,5 +10,7 @@ package tuan5.bai1;
  * @author phixuanhoan
  */
 public class CamSanh extends QuaCam{
-    
+     public String toString(){
+        return "cam sanh";
+    }
 }

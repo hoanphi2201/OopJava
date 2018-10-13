@@ -49,6 +49,7 @@ public class circle extends shape{
         return 2*PI*radius;
     }
     // toString
+    @Override
     public String toString(){
         return "circle";
     }

@@ -10,5 +10,7 @@ package tuan5.bai1;
  * @author phixuanhoan
  */
 public class QuaTao extends HoaQua{
-    
+     public String toString(){
+        return "qua tao";
+    }
 }

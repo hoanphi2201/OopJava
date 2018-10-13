@@ -131,6 +131,8 @@ public class HoaQua {
     public void setMauSac(String mauSac) {
         this.mauSac = mauSac;
     }
-    
+    public String toString(){
+        return "hoaqua";
+    }
    
 }

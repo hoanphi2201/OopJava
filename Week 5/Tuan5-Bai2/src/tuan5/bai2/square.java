@@ -42,13 +42,13 @@ public class square extends rectangle{
 
     @Override
     public void setWidth(double side) {
-        this.width = side;
+        this.width = this.length = side;    
     }
     @Override
     public void setLength(double side) {
-        this.length = side;
+        this.width = this.length = side;    
     }
-    // toString 
+    @Override
     public String toString(){
         return "square";
     }

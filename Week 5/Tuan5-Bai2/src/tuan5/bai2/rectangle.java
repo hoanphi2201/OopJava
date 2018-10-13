@@ -67,6 +67,7 @@ public class rectangle extends shape{
          return 2*(width + length);
      }
      // toString
+    @Override
      public String toString(){
          return "rectanle";
      }

@@ -9,7 +9,7 @@ package tuan5.bai2;
  *
  * @author phixuanhoan
  */
-public class application {
+public class application2 {
     public static void main(String[] args) {
         circle circle = new circle(3);
         System.out.println("Diện tích hình tròn: " +circle.getArea());
