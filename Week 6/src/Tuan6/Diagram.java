@@ -37,11 +37,8 @@ public class Diagram {
         }
     }
     public void output(){
-        
         for(int i = 0; i < listLayer.size(); i++){
-            if(listLayer.get(i).isVisible() == false){
-                listLayer.get(i).output();
-            }
+            listLayer.get(i).output();
         }
     }
     public void moveShapeToLayer(){
@@ -72,7 +69,7 @@ public class Diagram {
         int n = sc.nextInt();
         Diagram dg = new Diagram();
         dg.input(n);
-        dg.removeCircleInLayer();
+        //dg.removeCircleInLayer();
         dg.output();
     }
 }

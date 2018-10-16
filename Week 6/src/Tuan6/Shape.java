@@ -14,56 +14,36 @@ import java.util.Scanner;
  //Các hình có thể được tô màu hoặc được di chuyển
 public abstract class Shape {
     Scanner scan = new Scanner(System.in);
-    protected int x;
-    protected int y;
+    protected Location l = new Location();
+    String Color;
+    public void move(Location l1){
+        this.l.setX(l1.getX());
+        this.l.setY(l1.getY());
+        
+    }
     //Định nghĩa 2 phương thức abstract để bắt các lớp có 2 phương thức này
     public void input(){
-        System.out.println("Nhập toạ độ x");
-        x = scan.nextInt();
-        System.out.println("Nhập toạ độ y");
-        y = scan.nextInt();
-        
+        l.inPut();
     }
     public void output(){
-        System.out.println("Toạ độ x: " + x);
-        System.out.println("Toạ độ y: " + y);
+        l.outPut();
     }
-    public void move(int x, int y){
-        this.x = x;
-        this.y = y;
-    }
-    public void paint(){
-        
+    
+    public void paint(String color){
+        this.Color = color;
     }
     /**
-     * @return the x
+     * @return the l
      */
-    public int getX() {
-        return x;
+    public Location getL() {
+        return l;
     }
 
     /**
-     * @param x the x to set
+     * @param l the l to set
      */
-    public void setX(int x) {
-        this.x = x;
+    public void setL(Location l) {
+        this.l = l;
     }
-
-    /**
-     * @return the y
-     */
-    public int getY() {
-        return y;
-    }
-
-    /**
-     * @param y the y to set
-     */
-    public void setY(int y) {
-        this.y = y;
-    }
-
-    /**
-     * @return the width
-     */
+    
 }

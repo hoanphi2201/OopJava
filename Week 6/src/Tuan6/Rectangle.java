@@ -10,57 +10,30 @@ package Tuan6;
  * @author phixuanhoan
  */
 public class Rectangle extends Shape{
-    private int Width;
-    private int Height;
+    Location l1 = new Location();
+    Location l2 = new Location();
+    Location l3 = new Location();
     public void input(){
         super.input();
-        System.out.println("Nhập chiều dài: ");
-        setHeight(super.scan.nextInt());
-        System.out.println("Nhập chiều rộng: ");
-        Width = super.scan.nextInt();
+        l1.inPut();
+        l2.inPut();
+        l3.inPut();
+
     }
     public void output(){
         System.out.println("===== Rectangle =====");
         super.output();
-        System.out.println("Chiều dài: " + getHeight());
-        System.out.println("Chiều rộng: " + Width);
+        l1.outPut();
+        l2.outPut();
+        l3.outPut();
     }
-    /**
-     * @return the Width
-     */
-    public int getWidth() {
-        return Width;
-    }
-
-    /**
-     * @param Width the Width to set
-     */
-    public void setWidth(int Width) {
-        this.Width = Width;
-    }
-
-    /**
-     * @return the Height
-     */
-    public int getHeight() {
-        return Height;
-    }
-
-    /**
-     * @param Height the Height to set
-     */
-    public void setHeight(int Height) {
-        this.Height = Height;
-    }
+    
     public boolean sameRectangle(Rectangle r2) {
-        if (x == r2.x && y == r2.y && Width == r2.Width && Height == r2.Height) {
+        if (this.l1.sameLocation(r2.l1) && this.l2.sameLocation(r2.l2)
+           && this.l3.sameLocation(r2.l3) && l.sameLocation(r2.l)) {
             return true;
         }
 
         return false;
     }
-    /**
-     * @return the Length
-     */
-    
 }

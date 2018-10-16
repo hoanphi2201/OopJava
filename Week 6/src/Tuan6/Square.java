@@ -10,35 +10,26 @@ package Tuan6;
  * @author phixuanhoan
  */
 public class Square extends Shape{
-    private int Length;
+    Location l1 = new Location();
+    Location l2 = new Location();
+    Location l3 = new Location();
     public void input(){
         super.input();
-        System.out.println("Nhập chiều dài cạnh: ");
-        Length = super.scan.nextInt();
+        l1.inPut();
+        l2.inPut();
+        l3.inPut();
+
     }
     public void output(){
-        System.out.println("===== Square =====");
+        System.out.println("===== Rectangle =====");
         super.output();
-        System.out.println("Chiều dài cạnh: " + Length);
-    }
-    /**
-     * @return the Width
-     */
-    /**
-     * @return the Length
-     */
-    public int getLength() {
-        return Length;
-    }
-
-    /**
-     * @param Length the Length to set
-     */
-    public void setLength(int Length) {
-        this.Length = Length;
+        l1.outPut();
+        l2.outPut();
+        l3.outPut();
     }
     public boolean sameSquare(Square s2) {
-        if (x == s2.x && y == s2.y && Length == s2.Length) {
+        if (this.l1.sameLocation(s2.l1) && this.l2.sameLocation(s2.l2)
+           && this.l3.sameLocation(s2.l3) && l.sameLocation(s2.l)) {
             return true;
         }
 

@@ -10,35 +10,33 @@ package Tuan6;
  * @author phixuanhoan
  */
 public class Hexagon extends Shape{
-   private int Length;
+    Location l1 = new Location();
+    Location l2 = new Location();
+    Location l3 = new Location();
+    Location l4 = new Location();
+    Location l5 = new Location();
+    @Override
     public void input(){
         super.input();
-        System.out.println("Nhập chiều dài cạnh: ");
-        Length = super.scan.nextInt();
+        l1.inPut();
+        l2.inPut();
+        l3.inPut();
+        l4.inPut();
+        l5.inPut();
     }
     public void output(){
         System.out.println("===== Hexagon =====");
         super.output();
-        System.out.println("Chiều dài cạnh: " + Length);
+        l1.outPut();
+        l2.outPut();
+        l3.outPut();
+        l4.outPut();
+        l5.outPut();
     }
-    /**
-     * @return the Width
-     */
-    /**
-     * @return the Length
-     */
-    public int getLength() {
-        return Length;
-    }
-
-    /**
-     * @param Length the Length to set
-     */
-    public void setLength(int Length) {
-        this.Length = Length;
-    }
-    public boolean sameHexagon(Hexagon s2) {
-        if (x == s2.x && y == s2.y && Length == s2.Length) {
+    public boolean sameHexagon(Hexagon s2){
+        if(this.l1.sameLocation(s2.l1) && this.l2.sameLocation(s2.l2)
+           && this.l3.sameLocation(s2.l3) && this.l4.sameLocation(s2.l4)
+           && this.l5.sameLocation(s2.l5) && l.sameLocation(s2.l)){
             return true;
         }
         return false;

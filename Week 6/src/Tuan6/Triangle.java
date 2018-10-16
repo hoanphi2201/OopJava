@@ -10,74 +10,66 @@ package Tuan6;
  * @author phixuanhoan
  */
 public class Triangle extends Shape{
-    private int a;
-    private int b;
-    private int c;
+    private Location l1 = new Location();
+    private Location l2 = new Location();
+
+    public Triangle() {
+    }
     
+    
+    public Triangle(Location l1, Location l2) {
+        this.l1 = l1;
+        this.l2 = l2;
+    }
+    
+    @Override
     public void input(){
         super.input();
-        System.out.println("Nhập cạnh thứ nhất: ");
-        a = super.scan.nextInt();
-        System.out.println("Nhập cạnh thứ hai: ");
-        b = super.scan.nextInt();
-        System.out.println("Nhập cạnh thứ ba: ");
-        c = super.scan.nextInt();
+        getL1().inPut();
+        getL2().inPut();
+     
     }
+    @Override
     public void output(){
         System.out.println("===== Triangle =====");
         super.output();
-        System.out.println("Chiều dài cạnh thứ nhất: " + a);
-        System.out.println("Chiều dài cạnh thứ hai: " + b);
-        System.out.println("Chiều dài cạnh thứ ba: " + c);
-
-    }
-    /**
-     * @return the a
-     */
-    public int getA() {
-        return a;
-    }
-
-    /**
-     * @param a the a to set
-     */
-    public void setA(int a) {
-        this.a = a;
-    }
-
-    /**
-     * @return the b
-     */
-    public int getB() {
-        return b;
-    }
-
-    /**
-     * @param b the b to set
-     */
-    public void setB(int b) {
-        this.b = b;
-    }
-
-    /**
-     * @return the c
-     */
-    public int getC() {
-        return c;
-    }
-
-    /**
-     * @param c the c to set
-     */
-    public void setC(int c) {
-        this.c = c;
-    }
-    public boolean sameTriangle(Triangle t2) {
-        if (x == t2.x && y == t2.y && a == t2.a && b == t2.b && c == t2.c) {
-            return true;
-        }
-
-        return false;
+        l1.outPut();
+        l2.outPut();
     }
     
+    public boolean sameTriangle(Triangle t2){
+        if(this.l1.sameLocation(t2.l1) && this.l2.sameLocation(t2.l2) && l.sameLocation(t2.l)){
+            return true;
+        }
+        return false;
+    }
+
+    /**
+     * @return the l1
+     */
+    public Location getL1() {
+        return l1;
+    }
+
+    /**
+     * @param l1 the l1 to set
+     */
+    public void setL1(Location l1) {
+        this.l1 = l1;
+    }
+
+    /**
+     * @return the l2
+     */
+    public Location getL2() {
+        return l2;
+    }
+
+    /**
+     * @param l2 the l2 to set
+     */
+    public void setL2(Location l2) {
+        this.l2 = l2;
+    }
+
 }

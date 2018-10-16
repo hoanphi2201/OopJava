@@ -32,7 +32,7 @@ public class Circle extends Shape{
     }
     //2 hình giống nhau trả về true
     public boolean sameCircle(Circle c){
-        if(x == c.x && y == c.y && Radius == c.Radius){
+        if(this.l.sameLocation(c.l) && Radius == c.Radius){
             return true;
         }
         return false;
